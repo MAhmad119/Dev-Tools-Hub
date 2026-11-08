@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Free QR Code Generator with Logo | DevToolsHub</title>
+
+<meta name="description" content="Create QR codes from text and website URLs with an optional logo. Generate and download PNG QR codes online.">
+
+<link rel="canonical" href="https://YOUR-DOMAIN.com/qr-generator.html">
+
+<link rel="stylesheet" href="assets/style.css">
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script defer src="assets/app.js"></script>
+<script defer src="assets/tools.js"></script>
+
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+<main id="main-content">
+
+<section class="shell page-hero">
+
+<span class="eyebrow">QR CODE GENERATOR</span>
+
+<h1>QR Code Generator with Logo</h1>
+
+<p>
+Create QR codes from text and website URLs.
+Add a logo and download your QR code as PNG.
+</p>
+
+</section>
+
+<section class="shell workspace">
+
+<div class="panel">
+
+<h2>QR code settings</h2>
+
+<div class="field">
+
+<label for="qr-input">Enter text or website URL</label>
+
+<textarea id="qr-input" placeholder="https://example.com"></textarea>
+
+</div>
+
+<div class="field">
+
+<label for="qr-logo">Optional center logo</label>
+
+<input type="file" id="qr-logo" accept="image/*">
+
+</div>
+
+<div class="field">
+
+<label for="qr-size">QR code dimensions</label>
+
+<select id="qr-size">
+
+<option value="192">192 × 192</option>
+<option value="256" selected>256 × 256</option>
+<option value="384">384 × 384</option>
+<option value="512">512 × 512</option>
+
+</select>
+
+</div>
+
+<div class="actions">
+
+<button class="btn" id="qr-generate">Generate QR Code</button>
+
+<button class="btn secondary" id="qr-download" disabled>Download PNG</button>
+
+</div>
+
+<p id="qr-status" class="hint" role="status" aria-live="polite"></p>
+
+</div>
+
+<div class="panel">
+
+<h2>Your QR code</h2>
+
+<div class="preview">
+
+<div id="qr-output" aria-label="Generated QR code"></div>
+
+</div>
+
+<p class="hint">
+Scan-test the downloaded QR code before printing or sharing.
+</p>
+
+</div>
+
+</section>
+
+<section class="shell content">
+
+<h2>How to create a QR code</h2>
+
+<ol>
+<li>Enter your text or URL.</li>
+<li>Choose an optional center logo.</li>
+<li>Select the desired QR code dimensions.</li>
+<li>Click Generate QR Code.</li>
+<li>Download the PNG image.</li>
+</ol>
+
+<h2>What is a QR code?</h2>
+
+<p>
+A QR code is a two-dimensional barcode that can store
+text, website URLs and other information.
+Compatible camera applications can scan it.
+</p>
+
+<h2>Tips for better QR codes</h2>
+
+<p>
+Use high-contrast colors, keep the center logo small
+and leave enough white space around the code.
+Always test the final image with a scanning device.
+</p>
+
+<h2>Third-party library</h2>
+
+<p>
+QR generation uses QRCode.js, loaded from an external CDN.
+An internet connection is required to load this library.
+</p>
+
+</section>
+
+</main>
+
+<div id="site-footer"></div>
+
+</body>
+</html>
