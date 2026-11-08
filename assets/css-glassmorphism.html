@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>CSS Glassmorphism Generator Online | DevToolsHub</title>
+
+<meta name="description" content="Generate custom CSS glassmorphism effects. Adjust blur, transparency, background color and corner radius with live previews.">
+
+<link rel="canonical" href="https://YOUR-DOMAIN.com/css-glassmorphism.html">
+
+<link rel="stylesheet" href="assets/style.css">
+
+<script defer src="assets/app.js"></script>
+<script defer src="assets/tools.js"></script>
+
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+<main id="main-content">
+
+<section class="shell page-hero">
+
+<span class="eyebrow">CSS DESIGN TOOL</span>
+
+<h1>CSS Glassmorphism Generator</h1>
+
+<p>
+Create customizable frosted-glass effects and copy
+the generated CSS into your project.
+</p>
+
+</section>
+
+<section class="shell workspace">
+
+<div class="panel">
+
+<h2>Customize glass effect</h2>
+
+<div class="field">
+
+<div class="range-row">
+<label for="glass-blur">Backdrop blur</label>
+<b id="glass-blur-value">14px</b>
+</div>
+
+<input type="range" id="glass-blur" min="0" max="40" value="14">
+
+</div>
+
+<div class="field">
+
+<div class="range-row">
+<label for="glass-opacity">Background opacity</label>
+<b id="glass-opacity-value">18%</b>
+</div>
+
+<input type="range" id="glass-opacity" min="5" max="80" value="18">
+
+</div>
+
+<div class="field">
+
+<div class="range-row">
+<label for="glass-radius">Corner radius</label>
+<b id="glass-radius-value">20px</b>
+</div>
+
+<input type="range" id="glass-radius" min="0" max="48" value="20">
+
+</div>
+
+<div class="field">
+
+<label for="glass-color">Glass color</label>
+
+<input type="color" id="glass-color" value="#ffffff">
+
+</div>
+
+<div class="actions">
+
+<button class="btn" id="glass-copy">Copy CSS</button>
+
+<button class="btn secondary" id="glass-reset">Reset</button>
+
+</div>
+
+<p id="glass-status" class="hint" role="status" aria-live="polite"></p>
+
+</div>
+
+<div class="panel">
+
+<h2>Live preview</h2>
+
+<div class="preview"
+style="background:linear-gradient(135deg,#273c75,#8e44ad,#162447)">
+
+<div id="glass-preview"
+style="width:100%;max-width:340px;padding:35px;text-align:center;color:#ffffff;border:1px solid rgba(255,255,255,.3)">
+
+<h2>Frosted Glass</h2>
+
+<p>Modern translucent design.</p>
+
+</div>
+
+</div>
+
+<h2 style="margin-top:25px">Generated CSS</h2>
+
+<pre id="glass-output" class="codebox"></pre>
+
+</div>
+
+</section>
+
+<section class="shell content">
+
+<h2>What is glassmorphism?</h2>
+
+<p>
+Glassmorphism is a modern user-interface design technique
+that creates a frosted-glass appearance using transparency,
+background blur and subtle borders.
+</p>
+
+<h2>How to use the generated CSS</h2>
+
+<p>
+Adjust the available controls and preview your design.
+Copy the generated CSS and apply it to an element
+using the glass-card class.
+</p>
+
+</section>
+
+</main>
+
+<div id="site-footer"></div>
+
+</body>
+</html>
