@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Free Image Compressor & Resizer Online | DevToolsHub</title>
+
+<meta name="description" content="Resize and compress images online with the HTML Canvas API. Choose image dimensions and output quality directly in your browser.">
+
+<link rel="canonical" href="https://YOUR-DOMAIN.com/image-compressor.html">
+
+<link rel="stylesheet" href="assets/style.css">
+
+<script defer src="assets/app.js"></script>
+<script defer src="assets/tools.js"></script>
+
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+<main id="main-content">
+
+<section class="shell page-hero">
+
+<span class="eyebrow">IMAGE OPTIMIZATION</span>
+
+<h1>Image Resizer & Compressor</h1>
+
+<p>
+Resize and optimize image files using browser-based
+image processing.
+</p>
+
+</section>
+
+<section class="shell workspace">
+
+<div class="panel">
+
+<h2>Image settings</h2>
+
+<div class="field">
+
+<label for="image-file">Select an image</label>
+
+<input type="file" id="image-file" accept="image/*">
+
+</div>
+
+<div class="field">
+
+<label for="image-width">Maximum width in pixels</label>
+
+<input type="number" id="image-width" min="1" max="10000" value="1200">
+
+</div>
+
+<div class="field">
+
+<div class="range-row">
+
+<label for="image-quality">Image quality</label>
+
+<b id="image-quality-value">80%</b>
+
+</div>
+
+<input type="range" id="image-quality" min="10" max="100" value="80">
+
+</div>
+
+<div class="field">
+
+<label for="image-format">Output format</label>
+
+<select id="image-format">
+
+<option value="image/jpeg">JPEG</option>
+<option value="image/png">PNG</option>
+<option value="image/webp">WebP</option>
+
+</select>
+
+</div>
+
+<div class="actions">
+
+<button class="btn" id="image-process">Compress Image</button>
+
+<button class="btn secondary" id="image-download" disabled>Download Image</button>
+
+</div>
+
+<p id="image-status" class="hint" role="status" aria-live="polite">
+Choose an image to begin.
+</p>
+
+</div>
+
+<div class="panel">
+
+<h2>Preview</h2>
+
+<div class="preview">
+
+<img
+id="image-preview"
+class="hidden"
+alt="Selected or compressed image preview"
+style="max-height:340px;object-fit:contain"
+>
+
+<span class="hint">Your image preview appears here.</span>
+
+</div>
+
+<p id="image-info" class="hint"></p>
+
+</div>
+
+</section>
+
+<section class="shell content">
+
+<h2>How to compress images online</h2>
+
+<ol>
+<li>Select an image from your device.</li>
+<li>Enter your preferred maximum width.</li>
+<li>Choose the output format.</li>
+<li>Adjust image quality.</li>
+<li>Compress and download your image.</li>
+</ol>
+
+<h2>How does this image compressor work?</h2>
+
+<p>
+The tool uses the browser's HTML Canvas API to resize and
+export images. No dedicated image-processing backend
+is required.
+</p>
+
+<h2>Image quality and formats</h2>
+
+<p>
+JPEG and WebP support adjustable lossy quality.
+PNG export uses lossless encoding and generally ignores
+the quality setting.
+</p>
+
+<h2>Privacy</h2>
+
+<p>
+Selected images are processed locally in the browser
+and are not intentionally uploaded to our website.
+</p>
+
+</section>
+
+</main>
+
+<div id="site-footer"></div>
+
+</body>
+</html>
